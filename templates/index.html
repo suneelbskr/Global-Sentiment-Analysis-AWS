@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/444f290f82.js"
+      crossorigin="anonymous"></script>
+
+    <!--load all styles -->
+
+    <title>Data Science</title>
+    <style>
+      /*CSS Variables */
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --bgc: rgb(88, 106, 117);
+  --color:#ff282b;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+}
+
+body {
+  background: var(--bgc);
+  margin: 30px 50px;
+  line-height: 1.4;
+}
+
+
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: var(--dark);
+    color: var(--light);
+}
+.warn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: var(--dark);
+    color: #ececf6;
+}
+.btn::after{
+    content: "";
+    background: #75e661;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: width .5s ease;
+}
+.btn:hover::after{
+    width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* Navigation */
+
+.main-nav ul {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav a {
+  background: var(--primary);
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  color: var(--dark);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+  background: var(--dark);
+  color: #ccc;
+}
+/*Top Container*/
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase top-box-a"
+    "showcase showcase top-box-b";
+}
+
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+}
+.box3 {
+  background: var(--bgc);
+  text-align: center;
+}
+
+.box2 {
+  background: var(--primary);
+  text-align: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+}
+
+.twts {
+  background: var(--primary);
+  text-align: center;
+  box-shadow: var(--shadow);
+  grid-gap: 30px;
+}
+
+.info {
+  background: var(--primary);
+  text-align: center;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+.aboutme {
+  background: #101010;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.box4 {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  color: var(--light);
+  font-size: large;
+}
+#aboutme img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .info .btn {
+    display: block;
+  }
+
+  body {
+  background: var(--bgc);
+  margin: 30px 12px;
+  line-height: 1.4;
+  }
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--navigation-->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#contact">About</a></li>
+          <li><a href="#info">More Info</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!--Top Container-->
+
+      <!--Info Section-->
+      <section class="info">
+        <img src="static/Data3.jpg" alt="" />
+        <div>
+          <h2>Sentiment Analysis</h2>
+          <p>
+              Data Science is increasingly becoming important, the answer lies in the fact that the value of data is soaring heights. It explains how digital data is transforming businesses and helping them make sharper and critical decisions.
+          </p><br>
+          <div class="warn">For Educational Purpose Only</div>
+          <p>
+            Analyse the trends based on the search keyword and plot the
+            sentiment with data extracted from various sources like <b>Twitter, Finviz for Stocks and also from Global News articles</b>. Search Ex: TSLA, Crypto, IPL
+          </p><br>
+          <p>
+            <b>
+           Three different charts will be displayed after the search, more details below about each chart. The Sentiment is calculated as POSITIVE or NEGATIVE for each search keyword, ranging from +1(Extreme Positive) to -1(Extreme Negative)
+            </b>
+          </p>
+
+          <br/>
+          <a href="#search_here" class="btn">Try Searching Here !! </a>
+        </div>
+      </section>
+
+      <!--Boxes Section-->
+      <section id="info" class="boxes">
+        <div class="box">
+          <i class="fab fa-twitter fa-4x"></i>
+          <h3>Twitter</h3>
+          <p>
+            Analyze the sentiment from Twitter for the search key. Each dot on the chart represents a tweet. Limiting to only 500 tweets per search to avoid the API limit burn out. <br><b>Ex: Tesla, IPL, MachineLearning</b>
+        </div>
+        <div class="box">
+          <i class="fas fa-globe fa-4x"></i>
+          <h3>Worldwide News</h3>
+          <p>
+            Analyze the News articles from all over the world using NewsData.io API for the search key. Limited to only 10 articles per search. <br><br><b>Ex: Tesla, Bitcoin, IPL</b>
+          </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-chart-line fa-4x"></i>
+          <h3>USA Stocks</h3>
+          <p>
+            Analyze the Stock news and plot the news trends in the Chart. Each bar on the chart represents the sentiment for the day. Only USA[NYSE/Nasdaq] listed Stocks are analysed. <br><b>Ex: TSLA, GOOG, MSFT, FB</b>
+          </p>
+        </div>
+        <div class="box">
+          <i class="fab fa-aws fa-4x"></i><br><br>
+          <h3>
+            This application is hosted on AWS.
+          </h3>
+        </div>
+      </section>
+
+      <!--Search Section-->
+      <section id="search_here" class="Search">
+        <div class="box">
+          <i class="fas fa-search fa-4x"></i>
+          <h3>Search Term</h3>
+          <form name ="read_input" action=".." method ="post">
+      <input type="text" id="stock" name="stock" value= {{ search_str }}>
+      <input type="submit" value="Submit">
+    </form>
+        </div>
+      </section>
+
+      <section class="boxes">
+        <div class="box2">
+          <h3>Twitter Sentiment {{twtrInfo}}</h3>
+          <img id="twitterImg" src="data:image/jpeg;base64,{{ twtr_img_data }}", alt="" >
+         </div>
+
+        <div class="box2">
+          <h3>Stock News Sentiment[NYSE] {{stockInfo}}</h3>
+          <img id="stockImg" src="data:image/jpeg;base64,{{ stk_img_data }}", alt="" >
+        </div>
+
+        <div class="box2">
+          <h3>Global News Sentiment {{newsInfo}}</h3>
+          <img id="newsioImg" src="data:image/jpeg;base64,{{ newsio_img_data }}", alt="" >
+        </div>
+      </section>
+
+      <section class="boxes">
+        <div class="box3">
+          <img id="badSearch" src="data:image/jpeg;base64,{{ badSearch_img_data }}", alt="" >
+        </div>
+      </section>
+
+      <section class="Results">
+        <div class="twts">
+        <h3>{{pstvStr}}</h3>
+          <ul>
+           {% for item in pstv_lst %}
+             <p>{{ item }}</p><br>
+           {% endfor %}
+        </ul>
+        </div>
+        <div class="twts">
+        <h3>{{ngtvStr}}</h3>
+        <ul>
+           {% for item in ngtv_lst %}
+             <p>{{ item }}</p><br>
+           {% endfor %}
+        </ul>
+
+        </div>
+      </section>
+
+       <section id="contact" class="aboutme">
+          <div class="box4">
+          <h3>Suneel Reddy</h3>
+          <p>
+            DataWareHousing | BigData | Data Science | Cloud and AI-ML Rookie
+          </p>
+          </div>
+         <div class="box4">
+          <h3>Contact</h3>
+          <p>
+            suneel.prfsnl@gmail.com
+          </p>
+          </div>
+      </section>
+
+      <!--Results Section-->
+
+
+      <footer>
+        <p>Suneel reddy | DataScience & Me &copy; 2021</p>
+      </footer>
+    </div>
+  </body>
+</html>
