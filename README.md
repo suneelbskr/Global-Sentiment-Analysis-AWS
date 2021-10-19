@@ -1,4 +1,4 @@
-# Global-Sentiment-Analysis-AWS
+# Global-Sentiment-Analysis-AWS on Twitter, News, Stocks
  
 Hey There !!
 
@@ -9,7 +9,7 @@ Three charts will be populated for each search key. "Twitter sentiment" - "Gloca
 Try searching a key word , Ex: Crypto, Tesla, MSFT, AAPL...etc. More info in the website.
 
 
-Try this link:
+Try this link: To view the website and search few words.
 ==============
 
 http://ec2-65-0-136-211.ap-south-1.compute.amazonaws.com:8080/
