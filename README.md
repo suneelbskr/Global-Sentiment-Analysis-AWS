@@ -9,7 +9,7 @@ Three charts will be populated for each search key. "Twitter sentiment" - "Gloca
 Try searching a key word , Ex: Crypto, Tesla, MSFT, AAPL...etc. More info in the website.
 
 
-Website Link below: To view the website and search few words, hosted on AWS.
+Website Link below: To view the website and search few words and see the sentiment, hosted on AWS.
 ==================
 
 http://ec2-65-0-136-211.ap-south-1.compute.amazonaws.com:8080/
