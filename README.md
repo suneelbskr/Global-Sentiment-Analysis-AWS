@@ -11,5 +11,5 @@ Try searching a key word , Ex: Crypto, Tesla, MSFT, AAPL...etc. More info in the
 
 Website Link below: To view the website and search few words and see the sentiment, hosted on AWS.
 ==================
-
-http://ec2-65-0-136-211.ap-south-1.compute.amazonaws.com:8080/
+http://ec2-13-235-179-3.ap-south-1.compute.amazonaws.com:8080/
+//http://ec2-65-0-136-211.ap-south-1.compute.amazonaws.com:8080/
